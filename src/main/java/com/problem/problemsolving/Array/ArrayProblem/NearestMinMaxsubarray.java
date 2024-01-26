@@ -1,6 +1,6 @@
 package com.problem.problemsolving.Array.ArrayProblem;
 
-public class NearestMinMax {
+public class NearestMinMaxsubarray {
     public static void main(String[] args) {
         int arr[]={ 1, 5, 9, 7, 1, 9, 4 };
         int ans=Integer.MAX_VALUE;

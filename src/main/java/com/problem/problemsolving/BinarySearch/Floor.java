@@ -6,7 +6,7 @@ public class Floor {
         int arr []={1,4,7,9,13,18};
         int l=0;
         int h=arr.length-1;
-        int t=-1;
+        int t=25;
       //  int ans =floor(arr,l,h,t);
      //   System.out.println(ans);
         int ans1 =ceilvalue1(arr,l,h,t);
@@ -29,11 +29,10 @@ public class Floor {
             return floor(arr,m+1,h,t);
         }
         return floor(arr,l,m-1,t);
-
-
     }
 
     public static int ceilvalue1(int arr[],int l, int h,int t){
+        int ans=Integer.MIN_VALUE;
         while (l<=h){
             int m=(l+h)/2;
             if (arr[m]==t){
@@ -41,15 +40,14 @@ public class Floor {
 
             }
             else if(arr[m]<t){
+                ans=arr[m];
                 l=m+1;
             }
             else {
                 h=m-1;
             }
-
-
         }
-        return h;
+        return ans;
 
 
     }

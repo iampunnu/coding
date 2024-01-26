@@ -7,7 +7,7 @@ public class Ceil {
         int arr []={1,4,7,9,13,18};
         int l=0;
         int h=arr.length-1;
-        int t=19;
+        int t=11;
       //  int ans =ceilvalue(arr,l,h,t);
       //  System.out.println(ans);
         int ans1 =ceilvalue1(arr,l,h,t);
@@ -33,6 +33,7 @@ public class Ceil {
     }
 
     public static int ceilvalue1(int arr[],int l, int h,int t){
+        int ans=Integer.MAX_VALUE;
         while (l<=h){
             int m=(l+h)/2;
             if (arr[m]==t){
@@ -43,10 +44,11 @@ public class Ceil {
                 l=m+1;
             }
             else {
+                ans=arr[m];
                 h=m-1;
             }
         }
-        return l;
+        return ans;
 
 
     }
