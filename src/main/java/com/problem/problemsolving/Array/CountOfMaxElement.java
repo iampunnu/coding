@@ -1,6 +1,11 @@
 package com.problem.problemsolving.Array;
 
+
+import org.beginsecure.domain.primitive.Student;
+import org.springframework.beans.factory.annotation.Autowired;
+
 public class CountOfMaxElement {
+
     public static void main(String[] args) {
         int ar[] = { 10,90, 50, 60, 80, 90,90,1,9 };
         int Max=Integer.MIN_VALUE;

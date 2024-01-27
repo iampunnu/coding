@@ -60,7 +60,19 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-    </dependencies>
+    <dependency>
+        <groupId>org.beginsecure.domain.primitive</groupId>
+        <artifactId>domain-primitive</artifactId>
+        <version>1.0-SNAPSHOT</version>
+</dependency>
+        <dependency>
+            <groupId>org.spring</groupId>
+            <artifactId>autoConfigration</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+
+        </dependency>
+
+        </dependencies>
 
     <build>
         <plugins>
