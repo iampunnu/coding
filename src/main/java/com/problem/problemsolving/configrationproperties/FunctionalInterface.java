@@ -36,9 +36,9 @@ public class FunctionalInterface {
         //using filter also
        // i.stream().sorted().filter(n->n%2==1).map(n->n*2).forEach(c);
         ///map Reduce
-     //   System.out.println( i.stream().sorted().filter(n->n%2==1).map(n->n*2).reduce(0,(d,e)->d+e));
-       i= i.stream().sorted().collect(Collectors.toList());
-        System.out.println(i.toString());
+        System.out.println( i.stream().sorted().filter(n->n%2==1).map(n->n*2).reduce(Integer.MAX_VALUE,(d,e)->(d<e)?d:e));
+      // i= i.stream().sorted().collect(Collectors.toList());
+      //  System.out.println(i.toString());
 
 
 
