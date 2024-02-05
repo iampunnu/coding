@@ -9,10 +9,9 @@ public class MinNoToPerfectSquare {
         for (int i=2;i<=n;i++){
             int ans=Integer.MAX_VALUE;
             for(int j=1;j*j<=i;j++){
-                if(i>=j*j) {
                     int y = dp[i - (j * j)];
                     ans=Math.min(ans,y);
-                }
+
 
             }
             dp[i]=ans+1;
