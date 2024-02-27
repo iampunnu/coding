@@ -1,5 +1,6 @@
 package com.problem.problemsolving;
 
+import com.problem.problemsolving.autoconfiguration.HelperClass;
 import com.problem.problemsolving.configrationproperties.Acces;
 import org.beginsecure.domain.primitive.Address;
 import org.beginsecure.domain.primitive.Student;
@@ -19,6 +20,9 @@ public class ProblemSolvingApplication  implements CommandLineRunner{
     SpringCourse s;
     @Autowired
     Acces acces;
+    @Autowired
+    HelperClass helperClass;
+
     public static void main(String[] args) {
         ConfigurableApplicationContext configurableApplicationContext=SpringApplication.run(ProblemSolvingApplication.class, args);
 
@@ -32,6 +36,8 @@ public class ProblemSolvingApplication  implements CommandLineRunner{
 
     @Override
     public void run(String... args) throws Exception {
+        System.out.println("this is me ");
+        helperClass.pring();
         acces.pr();
         s.setName("praveen");
         s.getAuthorName().setAuthName("author");

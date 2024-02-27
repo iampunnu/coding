@@ -1,7 +1,7 @@
 package com.problem.problemsolving.Tree.binaryTree;
 
 public class Node {
-    Node left;
+    public Node left;
     Node right;
     int value;
     public Node(int value){
