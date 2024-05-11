@@ -1,9 +1,6 @@
 package com.problem.problemsolving.Array;
 
 
-import org.beginsecure.domain.primitive.Student;
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class CountOfMaxElement {
 
     public static void main(String[] args) {
